@@ -9,7 +9,7 @@ app.secret_key = '\xf5!\x07!qj\xa4\x08\xc6\xf8\n\x8a\x95m\xe2\x04g\xbb\x98|U\xa2
 def home():
     """Show the employee directory home page, which has a search form."""
 
-    return render_template("home.html")
+    return redirect("/employee_search")
 
 
 @app.route("/employee_search")
